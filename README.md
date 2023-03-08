@@ -5,6 +5,7 @@ because of the headers not loading :D
 
 # How to install
 copy everything from the downloaded folder exept the README file and paste everything in the Stand folder
+and load the new profile in stand.
 
 # suggestions
 if you have any cool themes you can send them in my discord or to me with dms
