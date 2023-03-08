@@ -4,7 +4,8 @@ if you want to switch themes its the best to first apply the default theme and t
 because of the headers not loading :D
 
 # How to install
-copy everything from the downloaded folder exept the README file and paste everything in the Stand folder
+copy resources folder and ThemeManager file and paste them in Lua Scripts folder
+then copy the Profiles folder and paste it in Stand folder
 and load the new profile in stand.
 
 # suggestions
