@@ -1,0 +1,8 @@
+Finished Tutorial: Yes
+Understands Commands: Yes
+Understands Sliders: Yes
+Understands Profiles: Yes
+Tree Compatibility Version: 44
+Stand
+	Lua Scripts
+		ThemeManager: On
