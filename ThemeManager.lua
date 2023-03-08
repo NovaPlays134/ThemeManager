@@ -31,7 +31,7 @@ if auto_updater == true then error("Invalid auto-updater lib. Please delete your
 
 local default_check_interval = 604800
 local auto_update_config = {
-    source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/ThemeManager.lua",
+    source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/ThemeManager.lua",
     script_relpath=SCRIPT_RELPATH,
     switch_to_branch=selected_branch,
     verify_file_begins_with="--",
@@ -40,49 +40,49 @@ local auto_update_config = {
     dependencies={
         {
             name="2Stand1",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/2Stand1.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/2Stand1.png",
             script_relpath="resources/Theme_Manager/2Stand1.png",
             check_interval=default_check_interval,
         },
 
         {
             name="2Take1",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/2Take1.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/2Take1.png",
             script_relpath="resources/Theme_Manager/2Take1.png",
             check_interval=default_check_interval,
         },
 
         {
             name="AcJoker",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/AcJoker.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/AcJoker.png",
             script_relpath="resources/Theme_Manager/AcJoker.png",
             check_interval=default_check_interval,
         },
 
         {
             name="Administrator_Tool",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/Administrator_Tool.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/Administrator_Tool.png",
             script_relpath="resources/Theme_Manager/Administrator_Tool.png",
             check_interval=default_check_interval,
         },
 
         {
             name="Kiddions",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/Kiddions.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/Kiddions.png",
             script_relpath="resources/Theme_Manager/Kiddions.png",
             check_interval=default_check_interval,
         },
 
 		{
             name="Optimum",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/Optimum.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/Optimum.png",
             script_relpath="resources/Theme_Manager/Optimum.png",
             check_interval=default_check_interval,
         },
 
         {
             name="Stand_Roses",
-            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/Lua%20Scripts/resources/Theme_Manager/Stand_Roses.png",
+            source_url="https://raw.githubusercontent.com/NovaPlays134/ThemeManager/main/resources/Theme_Manager/Stand_Roses.png",
             script_relpath="resources/Theme_Manager/Stand_Roses.png",
             check_interval=default_check_interval,
         },
