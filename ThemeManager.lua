@@ -716,7 +716,7 @@ end
     file = io.open(file_path, "w")
     file:write(contents)
     file:close()
-    menu.trigger_commands("loadTheme_Manager")
+    menu.trigger_commands("loadthememanager")
 end)
 
 menu.action(menu.my_root(), "Check for Update", {}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
