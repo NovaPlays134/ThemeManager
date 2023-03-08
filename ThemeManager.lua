@@ -731,6 +731,6 @@ menu.action(menu.my_root(), "Clean Reinstall", {}, "Force an update to the lates
     auto_updater.run_auto_update(auto_update_config)
 end)
 
-menu.action(menu.my_root(), "Disclaimer", {}, "I dit not create any of the themes in this script these are all taken from the theme channel in the discord server, so im not taking any credit from them.", function()
-    util.toast("I dit not create any of the themes in this script these are all taken from the theme channel in the discord server, so im not taking any credit from them.")
+menu.action(menu.my_root(), "Disclaimer", {}, "I did not create any of the themes in this script these are all taken from the theme channel in the discord server, so im not taking any credit from them.", function()
+    util.toast("I did not create any of the themes in this script these are all taken from the theme channel in the discord server, so im not taking any credit from them.")
 end)
