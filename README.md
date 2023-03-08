@@ -4,7 +4,7 @@ if you want to switch themes its the best to first apply the default theme and t
 because of the headers not loading :D
 
 # How to install
-copy everything from the downloaded folder exept the README file and paste everything in the Lua Scripts folder
+copy everything from the downloaded folder exept the README file and paste everything in the Stand folder
 
 # suggestions
 if you have any cool themes you can send them in my discord or to me with dms
