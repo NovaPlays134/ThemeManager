@@ -93,7 +93,7 @@ local auto_update_config = {
 auto_updater.run_auto_update(auto_update_config)
 
 --
-local themes = {"Default", "2Stand1", "2Take1", "Rockstar Admin Tools", "Optimum", "Kiddions", "Stand Roses", "12s Theme", "Administrator Tool", "AcJokerScript"}
+local themes = {"Default", "NovaScript", "2Stand1", "2Take1", "Rockstar Admin Tools", "Optimum", "Kiddions", "Stand Roses", "12s Theme", "Administrator Tool", "AcJokerScript", "Paragon"}
 local theme_number = 1
 menu.list_select(menu.my_root(), "Select Theme", {}, "",  themes, 1, function(index)
     theme_number = index
@@ -103,31 +103,38 @@ function updateHeader(number)
     local username = os.getenv("USERNAME")
     local src_dir = "C:\\Users\\" .. username .. "\\AppData\\Roaming\\Stand\\Lua Scripts\\resources\\Theme_Manager"
     local dest_dir = "C:\\Users\\" .. username .. "\\AppData\\Roaming\\Stand\\Headers\\Custom Header"
-    
-    local header1_filename = "2Stand1.png"
-    local header2_filename = "2Take1.png"
-    local header3_filename = "Optimum.png"
-    local header4_filename = "Kiddions.png"
-    local header5_filename = "Stand_Roses.png"
-    local header6_filename = "Administrator_Tool.png"
-    local header7_filename = "AcJoker.png"
+
+	local header1_filename = "NovaScript.png"
+    local header2_filename = "2Stand1.png"
+    local header3_filename = "2Take1.png"
+    local header4_filename = "Optimum.png"
+    local header5_filename = "Kiddions.png"
+    local header6_filename = "Stand_Roses.png"
+    local header7_filename = "Administrator_Tool.png"
+    local header8_filename = "AcJoker.png"
+	local header9_filename = "Paragon.png"
 
     local header_filename = ""
-    if number == 2 then
-      header_filename = header1_filename
+	if number == 2 then
+		header_filename = header1_filename
     elseif number == 3 then
       header_filename = header2_filename
-    elseif number == 5 then
-        header_filename = header3_filename
+    elseif number == 4 then
+      header_filename = header3_filename
     elseif number == 6 then
         header_filename = header4_filename
     elseif number == 7 then
         header_filename = header5_filename
-    elseif number == 9 then
+    elseif number == 8 then
         header_filename = header6_filename
     elseif number == 10 then
         header_filename = header7_filename
+    elseif number == 11 then
+        header_filename = header8_filename
+	elseif number == 12 then
+        header_filename = header9_filename
     end
+	util.yield(100)
     os.remove(dest_dir .. "\\" .. header1_filename)
     os.remove(dest_dir .. "\\" .. header2_filename)
     os.remove(dest_dir .. "\\" .. header3_filename)
@@ -135,7 +142,9 @@ function updateHeader(number)
     os.remove(dest_dir .. "\\" .. header5_filename)
     os.remove(dest_dir .. "\\" .. header6_filename)
     os.remove(dest_dir .. "\\" .. header7_filename)
-
+	os.remove(dest_dir .. "\\" .. header8_filename)
+	os.remove(dest_dir .. "\\" .. header9_filename)
+	util.yield(100)
     local header_src_path = src_dir .. "\\" .. header_filename
     local header_src_file = io.open(header_src_path, "rb")
     local header_dest_path = dest_dir .. "\\" .. header_filename
@@ -159,7 +168,9 @@ contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Lua Scripts
 		ThemeManager: On]]
@@ -170,7 +181,73 @@ contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
+Stand
+	Settings
+		Appearance
+			Colours
+				Primary Colour: 8182D3FF
+				Focused Text Colour: 000000FF
+				Focused Right-Bound Text Colour: 000000FF
+				Focused Texture Colour: 000000FF
+				Background Colour: 00000091
+				Unfocused Text Colour: 8182D3FF
+				Unfocused Right-Bound Text Colour: 8182D3FF
+				Unfocused Texture Colour: 8182D3FF
+			Header
+				Header: Custom
+			Address Bar
+				Address Bar: Off
+				Root Name: Hidden
+				Height: 25
+				Text
+					Scale: 11
+			Tabs
+				Width: 62
+				Height: 25
+				Position: Top
+				Text
+					Scale: 11
+				Text Alignment: Centre
+			Scrollbar
+				Width: 3
+			Notifications
+				Border Colour: 8182D3FF
+				Flash Colour: 8182D3FF
+				Background Colour: 00000088
+			Commands
+				Text
+					Scale: 13
+			Border
+				Width: 2
+				Rounded: On
+				Colour: 8182D3FF
+			Max Visible Commands: 12
+			List Width: 434
+			List Height: 28
+			Spacer Size: 0
+			Background Blur: 0
+			Font & Text
+				Small Text
+					Scale: 11
+					X Offset: -1
+					Y Offset: 3
+	Lua Scripts
+		ThemeManager: On
+			Select Theme: NovaScript
+]]
+
+elseif theme_number == 3 then
+updateHeader(theme_number)
+contents = [[Finished Tutorial: Yes
+Understands Commands: Yes
+Understands Sliders: Yes
+Understands Profiles: Yes
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
     Settings
         Appearance
@@ -214,13 +291,15 @@ Stand
             Select Theme: 2Stand1
 ]]
 
-elseif theme_number == 3 then
+elseif theme_number == 4 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
     Settings
         Appearance
@@ -264,12 +343,14 @@ Stand
             Select Theme: 2Take1
 ]]
 
-elseif theme_number == 4 then
+elseif theme_number == 5 then
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -323,13 +404,15 @@ Stand
             Select Theme: Rockstar Admin Tools
 ]]
 
-elseif theme_number == 5 then
+elseif theme_number == 6 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
     Settings
         Appearance
@@ -396,13 +479,15 @@ Stand
             Select Theme: Optimum
 ]]
 
-elseif theme_number == 6 then
+elseif theme_number == 7 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -467,13 +552,15 @@ Stand
             Select Theme: Kiddions
 ]]
 
-elseif theme_number == 7 then
+elseif theme_number == 8 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -539,12 +626,14 @@ Stand
             Select Theme: Stand Roses
 ]]
 
-elseif theme_number == 8 then
+elseif theme_number == 9 then
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -609,13 +698,15 @@ Stand
             Select Theme: 12s Theme
 ]]
 
-elseif theme_number == 9 then
+elseif theme_number == 10 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -675,13 +766,15 @@ Stand
             Select Theme: Administrator Tool
 ]]
 
-elseif theme_number == 10 then
+elseif theme_number == 11 then
 updateHeader(theme_number)
 contents = [[Finished Tutorial: Yes
 Understands Commands: Yes
 Understands Sliders: Yes
 Understands Profiles: Yes
-Tree Compatibility Version: 44
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
 Stand
 	Settings
 		Appearance
@@ -711,6 +804,78 @@ Stand
 	Lua Scripts
 		ThemeManager: On
 			Select Theme: AcJokerScript
+]]
+
+elseif theme_number == 12 then
+updateHeader(theme_number)
+contents = [[Finished Tutorial: Yes
+Understands Commands: Yes
+Understands Sliders: Yes
+Understands Profiles: Yes
+Understands Context Menu: Yes
+Understands Command Chaining: Yes
+Tree Compatibility Version: 45
+Stand
+	Settings
+		Appearance
+			Colours
+				Primary Colour: 636363DC
+				Focused Text Colour: D6D6D6FF
+				Focused Right-Bound Text Colour: 2D2D2DFF
+				Focused Texture Colour: D6D6D6FF
+				Background Colour: 1A1C1CF0
+				Unfocused Text Colour: D6D6D6FF
+				Unfocused Right-Bound Text Colour: D6D6D6FF
+				Unfocused Texture Colour: D6D6D6FF
+			Header
+				Header: Custom
+			Address Bar
+				Address Bar: Off
+				Root Name: Hidden
+				Height: 25
+				Text
+					Scale: 11
+			Cursor
+				Scroll Gap: 0
+				Width: 1
+				Colour: 4A9FF9FF
+			Tabs
+				Width: 62
+				Height: 25
+				Position: Top
+				Text
+					Scale: 11
+				Text Alignment: Centre
+			Scrollbar
+				Scrollbar: Disabled
+				Width: 3
+				Position: Bottom
+				Width: 255
+			Notifications
+				Width: 350
+				Border Colour: 3997DBFF
+				Flash Colour: 3997DBFF
+				Background Colour: 00000096
+			Commands
+				Text
+					Scale: 13
+			Border
+				Width: 2
+				Rounded: On
+				Colour: 4A9FF9FF
+			Max Visible Commands: 12
+			List Width: 434
+			List Height: 28
+			Spacer Size: 0
+			Background Blur: 0
+			Font & Text
+				Small Text
+					Scale: 11
+					X Offset: -1
+					Y Offset: 3
+	Lua Scripts
+		ThemeManager: On
+			Select Theme: Paragon
 ]]
 
 end
